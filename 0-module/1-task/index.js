@@ -4,6 +4,6 @@
  * @param {number} n index
  * @returns {number}
  */
-function sum (m, n) {
-
+var sum = function (m, n) {
+    return m + n;
 }
