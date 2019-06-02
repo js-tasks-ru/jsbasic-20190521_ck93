@@ -4,6 +4,9 @@
  * @param {number} n index
  * @returns {number}
  */
+
+ const HOURS_IN_DAY = 24
+
 // var pow = function (x, n) {
 //     x = +prompt('Введите число x', '');
 //     do {
@@ -13,7 +16,7 @@
 //     for (i = 1; i < n; i++) {
 //         result = result * x;
 //     }
-//     return result;
+//     return result * HOURS_IN_DAY;
 // }
 
 var pow = function (x, n) {
