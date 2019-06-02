@@ -3,5 +3,11 @@
  * @param {Object} obj
  * @returns {Boolean}
  */
-function isEmpty (obj) {
+
+let isEmpty = function(obj) {
+    let counter = 0;
+    for ( let key in obj) {
+        counter++;
+    }
+    return (counter > 0) ? false : true;
 }
