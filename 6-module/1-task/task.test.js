@@ -22,8 +22,8 @@ describe("6-module-1-task", function() {
             city: 'Petrozavods'
         }]);
 
-        table.el.querySelector('tbody tr').dispatchEvent(new Event('click', {bubbles: true}));
-        expect(table.el.querySelectorAll('tbody tr').length).toEqual(1);
+        table.el.querySelector('table tr:nth-child(2)').dispatchEvent(new Event('click', {bubbles: true}));
+        expect(table.el.querySelectorAll('table tr:nth-child(2)').length).toEqual(1);
     });
 
     it ('провеяерм что при удалении, передаются данные об удаляемом объекте в метод onRemoved', function () {
